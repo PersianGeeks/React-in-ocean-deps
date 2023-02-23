@@ -6,46 +6,45 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'میتی',
-  tagline: '',
-  favicon: 'img/logo.png',
-
+  title: "پرشن گیک",
+  tagline: "",
+  favicon: "img/logo.png",
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: "https://your-docusaurus-test-site.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: "facebook", // Usually your GitHub org/user name.
+  projectName: "docusaurus", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'fa',
-    locales: ['fa'],
+    defaultLocale: "fa",
+    locales: ["fa"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           showLastUpdateAuthor: false,
           showLastUpdateTime: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: ({docPath})=>{
-           return `https://github.com/mahdi-momeni/documents/tree/master/${docPath}`
+          editUrl: ({ docPath }) => {
+            return `https://github.com/mahdi-momeni/documents/tree/master/${docPath}`;
           },
         },
         blog: {
@@ -53,10 +52,10 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -66,55 +65,33 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: 'میتی',
+        title: "پرشن گیک",
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.png',
+          alt: "My Site Logo",
+          src: "img/logo.png",
         },
         items: [
           {
-            type: 'dropdown',
-            label: 'آموزش‌ها',
-            position: 'left',
+            type: "dropdown",
+            label: "آموزش‌ها",
+            position: "left",
             items: [
               {
-                label: 'Nodejs',
-                to: 'docs/Node/intro',
-                activeBaseRegex: 'docs/Node/',
-              },
-              {
-                label: 'React',
-                to: 'docs/React/intro',
-                activeBaseRegex: 'docs/React/',
-              },
-              {
-                label: 'Typescript',
-                to: 'docs/Typescript/intro',
-                activeBaseRegex: 'docs/Typescript/',
-              },
-              {
-                label: 'Next',
-                to: 'docs/Next/intro',
-                activeBaseRegex: 'docs/Next/',
-              },
-              {
-                label: 'Concepts',
-                to: 'docs/Concepts/intro',
-                activeBaseRegex: 'docs/Concepts/',
-              },
+                label: "نقشه راه",
+                to: "docs/Roadmap",
+              }
             ],
           },
-          {to: '/blog', label: 'بلاگ', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/facebook/docusaurus",
+            label: "GitHub",
+            position: "right",
           },
           {
-            type: 'search',
-            position: 'right',
+            type: "search",
+            position: "right",
           },
         ],
       },
@@ -126,10 +103,9 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       colorMode: {
-        defaultMode: 'dark',
+        defaultMode: "dark",
         respectPrefersColorScheme: true,
       },
-
     }),
 };
 
