@@ -12,14 +12,9 @@ const config = {
 
   // Set the production url of your site here
   url: "https://your-docusaurus-test-site.com",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/React-in-ocean-deps/",
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "persian-geeks-foundation", // Usually your GitHub org/user name.
-  projectName: "React-in-ocean-deps", // Usually your repo name.
+  organizationName: "PersianGeeks",
+  projectName: "React-in-ocean-deps",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -41,18 +36,9 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           showLastUpdateAuthor: false,
           showLastUpdateTime: false,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl: ({ docPath }) => {
             return `https://github.com/PersianGeeks/React-in-ocean-deps/tree/main/docs/${docPath}`;
           },
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
