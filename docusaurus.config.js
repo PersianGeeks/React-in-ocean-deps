@@ -44,7 +44,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: ({ docPath }) => {
-            return `https://github.com/mahdi-momeni/documents/tree/master/${docPath}`;
+            return `https://github.com/PersianGeeks/React-in-ocean-deps/tree/master/${docPath}`;
           },
         },
         blog: {
@@ -74,18 +74,13 @@ const config = {
         },
         items: [
           {
-            type: "dropdown",
-            label: "آموزش‌ها",
+            type: "doc",
             position: "left",
-            items: [
-              {
-                label: "نقشه راه",
-                to: "docs/Roadmap",
-              }
-            ],
+            docId: "intro",
+            label: "ری اکت در اعماق اقیانوس",
           },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/PersianGeeks/React-in-ocean-deps",
             label: "GitHub",
             position: "right",
           },
