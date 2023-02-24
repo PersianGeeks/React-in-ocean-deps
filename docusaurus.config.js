@@ -44,7 +44,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: ({ docPath }) => {
-            return `https://github.com/PersianGeeks/React-in-ocean-deps/tree/master/${docPath}`;
+            return `https://github.com/PersianGeeks/React-in-ocean-deps/tree/main/docs/${docPath}`;
           },
         },
         blog: {
